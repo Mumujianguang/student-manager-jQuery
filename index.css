@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+.wrapper .head{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #354457;
+}
+
+.wrapper .head .logo{
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    color: #b3bcc5;
+}
+
+.wrapper .head .logo img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.wrapper .left_menu{
+    width: 200px;
+    height: calc(100% - 70px);
+    background-color: #4d5e70;
+    color: #b3bcc5;
+}
+.wrapper .left_menu dl dt{
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.wrapper .left_menu dl dd{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.wrapper .left_menu dl dd:hover{
+    background-color: rgb(158, 157, 157);
+}
+
+.active{
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.wrapper .right_content{
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+    background-color: #eee;
+    min-width: 800px;
+}
+
+.wrapper .right_content .stuList{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.wrapper .right_content .stuList.content_active{
+    display: block;
+}
+
+.wrapper .right_content .stuList table{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.wrapper .right_content .stuList table thead{
+    color: #646987;
+    background-color: #e3e8ee;
+    
+}
+
+.wrapper .right_content .stuList table #tBody{
+    background-color: #fff;
+}
+
+.wrapper .right_content .stuList table tbody .btn{
+    padding: 2px 10px;
+    margin: 5px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper .right_content .stuList table tbody .editBtn{
+    background-color: #5cb85c;
+}
+
+.wrapper .right_content .stuList table tbody .editBtn:hover{
+    background-color: #398439;
+}
+
+.wrapper .right_content .stuList table tbody .removeBtn{
+    background-color: #d9534f;
+}
+
+.wrapper .right_content .stuList table tbody .removeBtn:hover{
+    background-color: #c9302c;
+}
+
+
+.pageBtn{
+    position: absolute;
+    width: 200px;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.wrapper .right_content .stuList .pageBtn #prevPageBtn,
+.wrapper .right_content .stuList .pageBtn #nextPageBtn{
+    outline: none;
+    border: none;
+    background-color: rgb(187, 233, 236);
+    width: 70px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.wrapper .right_content .stuList .pageBtn #prevPageBtn:hover,
+.wrapper .right_content .stuList .pageBtn #nextPageBtn:hover{
+    background-color: rgb(132, 210, 216);
+}
+
+
+.wrapper .right_content .addStu{
+    display: none;
+}
+
+.wrapper .right_content .addStu.content_active{
+    display: block;
+}
+
+.wrapper .right_content .addStu form{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+form div{ 
+    margin: 10px 0;
+}
+
+form .submitBox{
+    margin-left: 85px;
+}
+
+form .submitBox input{
+    width: 70px;
+}
+
+
+form div input{
+    font-size: 16px;
+}
+
+form div label{
+    display: inline-block;
+    width: 70px;
+    margin-right: 10px; 
+    text-align: right;
+}
+
+form div label.radio_sex{
+    width: 30px;
+    text-align: left;
+}
+
+
+.dialog{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.dialog .mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.dialog .dialog_content{
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -250px;
+}
+.dialog .formBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}

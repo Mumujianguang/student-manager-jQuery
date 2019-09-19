@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./images/logo.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+                <span>学生管理系统</span>
+            </div>
+        </div>
+        <div class="left_menu">
+            <dl class="menu_list">
+                <dt>学生管理</dt>
+                <dd id="menuStudentList" data-id="stuList">学生列表</dd>
+                <dd id="menuAddStu" data-id="addStu">新增学生</dd>
+            </dl>
+        </div>
+        <div class="right_content">
+            <div class="stuList content_active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>学号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>邮箱</th>
+                            <th>年龄</th>
+                            <th>手机号</th>
+                            <th>住址</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+                        <tr>
+                            <td>1</td>
+                            <td>木木</td>
+                            <td>男</td>
+                            <td>邮箱</td>
+                            <td>年龄</td>
+                            <td>手机号</td>
+                            <td>住址</td>
+                            <td>
+                                <button class="btn editBtn">编辑</button>
+                                <button class="btn removeBtn">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="dialog">
+                    <div class="mask"></div>
+                    <div class="dialog_content">
+                        <div class="formBox">
+                            <form  id="changeStudentInfo" action="">
+                                <div>
+                                    <label for="name">姓名</label>
+                                    <input id="name" type="text" name="name">
+                                </div>
+                                <div>
+                                    <label for="">性别</label>
+                                    <input id="male" type="radio" name="sex" value="0">
+                                    <label for="male" class="radio_sex">男</label>
+                                    <input id="female" type="radio" name="sex" value="1">
+                                    <label for="female" class="radio_sex">女</label>
+                                </div>
+                                <div>
+                                    <label for="sNo">学号</label>
+                                    <input id="sNo" type="text" name="sNo">
+                                </div>
+                                <div>
+                                    <label for="email">邮箱</label>
+                                    <input id="email" type="text" name="email">
+                                </div>
+                                <div>
+                                    <label for="birth">出生年</label>
+                                    <input id="birth" type="text" name="birth">
+                                </div>
+                                <div>
+                                    <label for="phone">手机号</label>
+                                    <input id="phone" type="text" name="phone">
+                                </div>
+                                <div>
+                                    <label for="address">地址</label>
+                                    <input id="address" type="text" name="address">
+                                </div>
+                                <div class="submitBox">
+                                    <input class="changeBtn" type="submit" value="提交">
+                                    <input type="reset">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pageBtn">
+                    <button id="prevPageBtn">上一页</button>
+                    <button id="nextPageBtn">下一页</button>
+                </div>
+                
+            </div>
+            <div class="addStu">
+                <form id="add_student_form" action="">
+                    <div>
+                        <label for="name">姓名</label>
+                        <input id="name" type="text" name="name">
+                    </div>
+                    <div>
+                        <label for="">性别</label>
+                        <input id="male" type="radio" name="sex" value="0">
+                        <label for="male" class="radio_sex">男</label>
+                        <input id="female" type="radio" name="sex" value="1">
+                        <label for="female" class="radio_sex">女</label>
+                    </div>
+                    <div>
+                        <label for="sNo">学号</label>
+                        <input id="sNo" type="text" name="sNo">
+                    </div>
+                    <div>
+                        <label for="email">邮箱</label>
+                        <input id="email" type="text" name="email">
+                    </div>
+                    <div>
+                        <label for="birth">出生年</label>
+                        <input id="birth" type="text" name="birth">
+                    </div>
+                    <div>
+                        <label for="phone">手机号</label>
+                        <input id="phone" type="text" name="phone">
+                    </div>
+                    <div>
+                        <label for="address">地址</label>
+                        <input id="address" type="text" name="address">
+                    </div>
+                    <div class="submitBox">
+                        <input id="add_student_btn" type="submit" value="提交">
+                        <input type="reset">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <!-- <script src="./jQIndex.js"></script> -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
